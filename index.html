@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <!-- tailwindcss -->
+  <!-- <link rel="stylesheet" href="./css/tailwind.css"> -->
+
+  <link rel="stylesheet" href="./css/style.min.css">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-custom-Cream">
+
+  <main class="flex flex-col h-screen justify-center items-center gap-1">
+
+    <div class="max-w-[320px] desktop:max-w-[555px] shadow-sm bg-white rounded-xl flex flex-col desktop:flex-row">
+      
+      <div class="basis-1/2">
+        <picture>
+          <source media="(min-width:376px)" srcset="./images/image-product-desktop.jpg" alt="...">
+          <img class="rounded-t-xl desktop:rounded-none desktop:rounded-l-xl h-full w-full" src="./images/image-product-mobile.jpg" alt="..." style="width:auto;">
+        </picture>
+      </div>
+
+      <div class="basis-1/2">
+        <div class="p-4">
+          <h2 class="uppercase tracking-[3px] font-Montserrat text-xs text-custom-Dark-grayish-blue my-2">
+            Perfume
+          </h2>
+
+          <h1 class="font-Fraunces text-3xl mb-4 text-custom-Very-dark-blue desktop:pr-5">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+
+          <p class="text-[14px] font-Montserrat text-custom-Dark-grayish-blue mb-4">
+            A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.
+          </p>
+
+          <div class="flex items-center gap-4">
+            <span class="font-Fraunces text-2xl text-custom-Dark-cyan font-bold">
+              $149.99
+            </span>
+            <span class="font-Montserrat text-xs text-custom-Dark-grayish-blue">
+              <del>
+                $169.99
+              </del>
+            </span>
+          </div>
+
+          <button class="bg-custom-Dark-cyan w-full rounded-lg font-Montserrat text-white text-sm p-3 mt-5 desktop:mt-8 hover:bg-[#193e31]">
+            <img src="./images/icon-cart.svg" class="inline-block" alt="...">
+            <span class="ml-1">
+              Add to Cart
+            </span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a target="_blank" href="https://github.com/sajidrec">MD. Sajid Hossain</a>.
+    </div>
+
+  </main>
+
+
+</body>
+
+</html>
